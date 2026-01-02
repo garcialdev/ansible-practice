@@ -4,9 +4,9 @@
   connection: local
   gather_facts: false
   vars:
-    proxmox_host: "10.0.0.2"
+    proxmox_host: "proxmox_host_ip"
     proxmox_user: "root@pam"
-    proxmox_password: "whatisthedeal"
+    proxmox_password: "password"
     proxmox_node: "prox"
     template_name: "ubuntu-template"
     storage_name: "Storage4tb"
@@ -14,13 +14,13 @@
     vm_cores: 2
     vm_sockets: 1
     cloud_user: "ubuntu"
-    cloud_password: "whatisthedeal"
-    gateway: "10.0.0.1"
+    cloud_password: "password"
+    gateway: "your_gateway"
     vm_list:
       - name: k4
-        ip: "10.0.0.121"
+        ip: "node_ip"
       - name: k5
-        ip: "10.0.0.122"
+        ip: "node_ip"
 
   tasks:
 
