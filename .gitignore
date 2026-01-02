@@ -1,2 +1,2 @@
-create-vm.yml
-full-vm.yml
+templates/create-vm.yml
+templates/full-vm.yml
