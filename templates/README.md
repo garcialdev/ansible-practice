@@ -1,4 +1,3 @@
-# ansible-practice
 # Automating Kubernetes VM Creation in Proxmox Using Ansible
 
 This document explains how an Ansible playbook is used to:
@@ -54,9 +53,9 @@ Example VM list:
 ```yaml
 vm_list:
   - name: k4
-    ip: 10.0.0.121
+    ip: server_ip
   - name: k5
-    ip: 10.0.0.122
+    ip: server_ip
 ```
 
 ---

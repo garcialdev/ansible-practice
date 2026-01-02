@@ -7,11 +7,11 @@
   tasks:
     - name: Create new VMs from template (linked clone)
       community.general.proxmox_kvm:
-        api_host: "10.0.0.2"
+        api_host: "proxmox_host_ip"
         api_user: "root@pam"
-        api_password: "whatisthedeal"
+        api_password: "password"
         node: "prox"
-        clone: "ubi-template"        # The original VM template
+        clone: "ubuntu-template"        # The original VM template
         clone_type: linked             # Use linked clone (this is the magic part!)
         name: "kube-{{ item }}"         # VM names will be kube-1, kube-2, kube-3
         storage: "Storage4tb"          # The storage where the clones will reside
