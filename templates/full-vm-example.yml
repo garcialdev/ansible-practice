@@ -17,9 +17,9 @@
     cloud_password: "password"
     gateway: "your_gateway"
     vm_list:
-      - name: k4
+      - name: k6
         ip: "node_ip"
-      - name: k5
+      - name: k7
         ip: "node_ip"
 
   tasks:
@@ -61,7 +61,7 @@
       wait_for:
         host: "{{ item.ip }}"
         port: 22
-        timeout: 7600
+        timeout: 117600
       loop: "{{ vm_list }}"
 
     - name: Add new VMs to Ansible inventory
@@ -73,7 +73,7 @@
 
 # PLAY 3 — Configure the new VMs
 - name: Configure hostnames and install Oh-My-Posh
-  hosts: k4,k5
+  hosts: k6,k7 # Update with your VM names
   become: true
   gather_facts: true
 
