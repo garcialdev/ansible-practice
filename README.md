@@ -153,7 +153,7 @@ No manual VM creation is necessary anymore.
 
 ---
 
-## Running the Playbook
+## 🏃🏽‍➡️Running the Playbook
 
 Store file as:
 
