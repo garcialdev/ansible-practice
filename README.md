@@ -13,7 +13,7 @@ This approach allows you to spin up Kubernetes nodes (or any Linux VMs) repeated
 
 ---
 
-## Prerequisites
+## Prerequisites ✅
 
 Before running the playbook:
 
